@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container-folha-adicionar-produto">
+        <div class="folha-branca">
+
+            <h1 class="titulo-folha-branca">Lista</h1>
+                <ul class="lista"id="lista">
+                    <li class="item"><strong>7</strong>Camisas</li>    
+                </ul>
+        </div>
+
+        <form class="adicionar-produto-quantidade" id="adicionar-produto-quantidade">
+
+            <label for="item" class="label-adicionar">Produto<img src="/img/carrinho.png" alt="Carrinho de compras" class="img-carrinho"></label>
+            <input type="text" name="produto" class="input-adicionar" id="produto-adicionar" placeholder="Produto">
+
+            <label for="item"class="label-adicionar">Quantidade</label>
+            <input type="number" name="quantidade" class="input-adicionar" id="quantidade-adicionar" placeholder="Quantidade">
+
+            <input type="submit" value="Adicionar" class="bnt-adicionar" id="bnt-adicionar">
+        </form>
+    </section>
+<script src="/js/main.js"></script>    
+</body>
+</html>

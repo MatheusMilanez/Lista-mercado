@@ -1,0 +1,121 @@
+@import url(/reset.css);
+
+:root{
+    --vinho-principal:#912C20;
+    --preto-principal:#000000;
+    --marrom-amarelado:#D5BB6D;
+    --azul-claro:#419D9F;
+    --vermelho:#FF1616;
+    --branco:#FFFFFF;
+}
+
+body{
+    background-color: var(--vinho-principal);
+    font-family: 'Michroma', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.container-folha-adicionar-produto{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.folha-branca{
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: var(--branco);
+}
+
+.titulo-folha-branca{
+    text-align: center;
+    padding: 12px;
+}
+
+.adicionar-produto-quantidade{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.input-adicionar{
+    width: 400px;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 15px;
+    background-color: var(--marrom-amarelado);
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.input-adicionar::placeholder{
+    color: var(--preto-principal);
+
+}
+
+.bnt-adicionar{
+    width: 200px;
+    height: 40px;
+    margin: 15px auto;
+    border-radius: 15px;
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.bnt-adicionar:hover{
+    background-color: aquamarine;
+    color:var(--preto-principal);
+    cursor: pointer;
+}
+
+.img-carrinho{
+    max-width: 360px;
+    height: 70px;
+}
+
+.label-adicionar{
+    color: var(--branco);
+}
+
+
+.lista {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+    padding: 0.6em 2em;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.item strong {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    Background: #C5965F;
+    font-weight: 400;
+}
